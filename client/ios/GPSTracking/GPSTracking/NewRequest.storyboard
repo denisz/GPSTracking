@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Navigation Controller-->
+        <scene sceneID="LFf-n9-p5L">
+            <objects>
+                <navigationController storyboardIdentifier="newRequestController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mfw-Uw-yKK" customClass="MyNavigationController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="L0j-Ak-w6s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.086269997060000006" green="0.34117999669999999" blue="0.52157002689999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.27843001480000001" green="0.31373000140000001" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.27843001480000001" green="0.31373000140000001" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GOq-Ug-4eT" kind="relationship" relationship="rootViewController" id="KQP-yO-xuC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGd-hO-y58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="178"/>
+        </scene>
+        <!--Новый запрос-->
+        <scene sceneID="j7v-Jw-EaB">
+            <objects>
+                <viewController title="Новый запрос" id="GOq-Ug-4eT" customClass="NewRequestViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lD3-Br-l9V"/>
+                        <viewControllerLayoutGuide type="bottom" id="8zd-vh-hTA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YBW-Fj-oce">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Новый запрос" id="fAg-xo-CGy">
+                        <barButtonItem key="backBarButtonItem" title="Назад" style="plain" id="r1Q-wi-jOS"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOc-Ij-9HR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="-362"/>
+        </scene>
+        <!--Common Form View Controller-->
+        <scene sceneID="a0i-XX-Blc">
+            <objects>
+                <viewController storyboardIdentifier="CommonFormViewController" id="DsG-SI-5Ms" customClass="CommonFormViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4XA-ON-KDf"/>
+                        <viewControllerLayoutGuide type="bottom" id="aIK-tp-jGD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="obs-0D-YNL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sm1-5h-iw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="908"/>
+        </scene>
+        <!--Color Form View Controller-->
+        <scene sceneID="SUB-rf-8Px">
+            <objects>
+                <viewController storyboardIdentifier="ColorViewController" id="pLQ-bm-IMh" customClass="ColorFormViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cNZ-FN-xht"/>
+                        <viewControllerLayoutGuide type="bottom" id="PmM-vw-Ux5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lcV-l4-75A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" canCancelContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZOv-Yh-lia">
+                                <rect key="frame" x="4" y="0.0" width="592" height="600"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qXn-hJ-u7D">
+                                    <size key="itemSize" width="110" height="110"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="30" minY="30" maxX="30" maxY="30"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="ColorCell" id="eT7-pt-kV0" customClass="ColorCellView" customModule="It_will_help" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="30" width="110" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQj-Wd-416">
+                                                    <rect key="frame" x="8" y="81" width="94" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Cqm-ND-bcv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-7M-6bb">
+                                                    <rect key="frame" x="23" y="8" width="65" height="65"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <gestureRecognizers/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="32"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="dQj-Wd-416" firstAttribute="bottom" secondItem="eT7-pt-kV0" secondAttribute="bottomMargin" id="4JX-5N-8cy"/>
+                                            <constraint firstItem="TSd-7M-6bb" firstAttribute="leading" secondItem="eT7-pt-kV0" secondAttribute="leadingMargin" constant="15" id="9Hr-kb-LDJ"/>
+                                            <constraint firstItem="dQj-Wd-416" firstAttribute="centerX" secondItem="TSd-7M-6bb" secondAttribute="centerX" id="IY4-1e-ljN"/>
+                                            <constraint firstItem="TSd-7M-6bb" firstAttribute="top" secondItem="eT7-pt-kV0" secondAttribute="topMargin" id="Z0z-Ww-EVX"/>
+                                            <constraint firstItem="dQj-Wd-416" firstAttribute="leading" secondItem="eT7-pt-kV0" secondAttribute="leadingMargin" id="aLh-5e-MRB"/>
+                                            <constraint firstItem="dQj-Wd-416" firstAttribute="trailing" secondItem="eT7-pt-kV0" secondAttribute="trailingMargin" id="ed8-vL-7zs"/>
+                                            <constraint firstItem="dQj-Wd-416" firstAttribute="top" secondItem="TSd-7M-6bb" secondAttribute="bottom" constant="8" symbolic="YES" id="lH3-Ac-QTp"/>
+                                        </constraints>
+                                        <size key="customSize" width="110" height="110"/>
+                                        <connections>
+                                            <outlet property="colorView" destination="TSd-7M-6bb" id="qVM-PE-Q5Q"/>
+                                            <outlet property="titleLabel" destination="dQj-Wd-416" id="pjE-Er-ehd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="pLQ-bm-IMh" id="L1B-px-Z03"/>
+                                    <outlet property="delegate" destination="pLQ-bm-IMh" id="EKb-JO-2rC"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZOv-Yh-lia" firstAttribute="top" secondItem="lcV-l4-75A" secondAttribute="topMargin" id="50V-Tc-kGi"/>
+                            <constraint firstItem="ZOv-Yh-lia" firstAttribute="leading" secondItem="lcV-l4-75A" secondAttribute="leadingMargin" constant="-16" id="Gkk-bk-wvv"/>
+                            <constraint firstItem="PmM-vw-Ux5" firstAttribute="top" secondItem="ZOv-Yh-lia" secondAttribute="bottom" id="JqQ-VE-LCM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZOv-Yh-lia" secondAttribute="trailing" constant="-16" id="rP0-Qr-sHl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorCollectionView" destination="ZOv-Yh-lia" id="NQr-vc-aT5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTQ-6O-2Wm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="908"/>
+        </scene>
+        <!--People Form View Controller-->
+        <scene sceneID="eXD-K1-Ttb">
+            <objects>
+                <viewController storyboardIdentifier="PeopleFormViewController" id="B7z-hs-zQ2" customClass="PeopleFormViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pnO-ah-xBp"/>
+                        <viewControllerLayoutGuide type="bottom" id="B9y-f6-gJq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iN8-S9-XbX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63A-QV-SXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776" y="908"/>
+        </scene>
+        <!--Карта-->
+        <scene sceneID="8is-Yx-CJc">
+            <objects>
+                <viewController storyboardIdentifier="PointInMapViewController" title="Карта" id="7De-b4-bWU" customClass="PointInMapViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rHr-AU-HTT"/>
+                        <viewControllerLayoutGuide type="bottom" id="b6I-Ah-xB3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iny-MN-apg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Карта" id="aqo-Pk-6wc">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="F02-fz-cDu"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FF-zG-i8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="914"/>
+        </scene>
+    </scenes>
+</document>

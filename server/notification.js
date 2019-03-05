@@ -1,0 +1,1 @@
+require('./core/services/notification/app.js')

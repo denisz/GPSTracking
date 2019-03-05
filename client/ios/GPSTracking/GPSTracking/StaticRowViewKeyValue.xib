@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaticRowViewKeyValue" rowHeight="76" id="lhK-Zc-T8a" customClass="StaticRowViewKeyValue" customModule="It_will_help" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lhK-Zc-T8a" id="l7N-SO-hf7">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="344" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="iaI-8X-YCs">
+                        <rect key="frame" x="8" y="30" width="344" height="5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Ky7-yv-ni3"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="hHM-5P-6ah">
+                        <rect key="frame" x="8" y="0.0" width="120" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="CsU-HD-keE"/>
+                            <constraint firstAttribute="height" constant="34" id="PNO-C8-n2k"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.15686274510000001" green="0.21960784310000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJh-7e-U4V">
+                        <rect key="frame" x="136" y="8" width="216" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="3I7-gl-2M4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.28626999260000002" green="0.30588001009999999" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LJh-7e-U4V" firstAttribute="top" secondItem="l7N-SO-hf7" secondAttribute="top" constant="8" id="H4i-5U-lDT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iaI-8X-YCs" secondAttribute="trailing" id="HKi-EI-nJt"/>
+                    <constraint firstAttribute="trailing" secondItem="LJh-7e-U4V" secondAttribute="trailing" constant="8" id="Jat-zg-FFK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iaI-8X-YCs" secondAttribute="bottom" id="VhI-hS-n9P"/>
+                    <constraint firstItem="hHM-5P-6ah" firstAttribute="leading" secondItem="l7N-SO-hf7" secondAttribute="leadingMargin" id="WSf-UG-d3n"/>
+                    <constraint firstItem="LJh-7e-U4V" firstAttribute="leading" secondItem="hHM-5P-6ah" secondAttribute="trailing" constant="8" id="awp-Z9-vQ1"/>
+                    <constraint firstItem="iaI-8X-YCs" firstAttribute="top" secondItem="LJh-7e-U4V" secondAttribute="bottom" constant="1.5" id="bAt-Cr-B8t"/>
+                    <constraint firstItem="iaI-8X-YCs" firstAttribute="leading" secondItem="l7N-SO-hf7" secondAttribute="leadingMargin" id="doi-q7-DEg"/>
+                    <constraint firstItem="hHM-5P-6ah" firstAttribute="top" secondItem="l7N-SO-hf7" secondAttribute="top" id="z20-Go-GYy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="keyView" destination="hHM-5P-6ah" id="VHF-GZ-hqN"/>
+                <outlet property="subview" destination="iaI-8X-YCs" id="775-RW-FWV"/>
+                <outlet property="valueView" destination="LJh-7e-U4V" id="IM0-Px-tQp"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="162"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,30 @@
+/* 
+  ru.strings
+  GPSTracking
+
+  Created by denis zaytcev on 7/28/15.
+  Copyright (c) 2015 denis zaytcev. All rights reserved.
+*/
+
+"Enable LocationInUse"  = "Доступ к локации";
+"Allow LocationInUse"   = "Доступ к локации";
+"Allow Location"   = "Доступ к локации";
+"Enable Location"   = "Доступ к локации";
+"Allow Notifications"   = "Разрешить оповещения";
+"Allowed Notifications" = "Разрешено";
+"Allowed LocationInUse" = "Разрешено";
+"Denied LocationInUse" = "Запрещен доступ";
+"Denied Location" = "Запрещен доступ";
+"Denied Notifications" = "Запрещен доступ";
+
+"Permission for Notifications was denied." = "Доступ к нотификациям был запрещен";
+"Please enable access to Notifications in the Settings app" = "Вы можете изменить доступ к нотификацям в настройках";
+
+"Permission for Location was denied." = "Доступ к локации был запрещен";
+"Please enable access to Location in the Settings app" = "Вы можете изменить доступ к локации в настройках";
+
+"Permission for LocationInUse was denied." = "Доступ к локации был запрещен";
+"Please enable access to LocationInUse in the Settings app" = "Вы можете изменить доступ к локации в настройках";
+
+
+"Show me" = "Настройки";

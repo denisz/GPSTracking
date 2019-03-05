@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnswerPopupView" customModule="It_will_help" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar" destination="jJE-we-paM" id="d1y-E5-gD3"/>
+                <outlet property="context" destination="2id-O1-hrz" id="bEm-KO-tRO"/>
+                <outlet property="dateView" destination="hTH-6f-eSF" id="Jcx-on-a5g"/>
+                <outlet property="fullname" destination="LrA-jb-ryz" id="Nfh-E5-aXb"/>
+                <outlet property="locationView" destination="vhz-fg-lvn" id="hND-X6-13F"/>
+                <outlet property="mapView" destination="XxH-X7-WE5" id="Q6E-dm-Gwc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4X-tL-Ieh" userLabel="Info">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jJE-we-paM">
+                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="EMk-bR-kmb"/>
+                                <constraint firstAttribute="width" constant="50" id="HW0-PO-6dB"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Иванов Иван" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="LrA-jb-ryz">
+                            <rect key="frame" x="66" y="8" width="108" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="yYv-H5-CRZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.27843001480000001" green="0.31373000140000001" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Преступное посягательство" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="2id-O1-hrz">
+                            <rect key="frame" x="66" y="37" width="246" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="0cJ-J4-zbk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.28626999260000002" green="0.30588001009999999" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вчера" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTH-6f-eSF">
+                            <rect key="frame" x="182" y="8" width="130" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="ord-dG-xV5"/>
+                                <constraint firstAttribute="height" constant="21" id="rLv-EA-lcO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="42" text="Label20235A E Homestead Rd Саннивейл Соединённые Штаты Америки" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vhz-fg-lvn" userLabel="Location" customClass="LocationView" customModule="It_will_help" customModuleProvider="target">
+                            <rect key="frame" x="8" y="87" width="304" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="MoX-RJ-z33"/>
+                                <constraint firstAttribute="height" constant="42" id="jPw-uJ-iMp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <color key="textColor" red="0.54118001459999998" green="0.56077998880000002" blue="0.57647001740000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxH-X7-WE5" customClass="RequestMapView" customModule="It_will_help" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="137" width="320" height="105"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="LrA-jb-ryz" firstAttribute="top" secondItem="hTH-6f-eSF" secondAttribute="top" id="2oq-6f-3xE"/>
+                        <constraint firstAttribute="trailing" secondItem="XxH-X7-WE5" secondAttribute="trailing" id="4WT-Fk-0vI"/>
+                        <constraint firstItem="LrA-jb-ryz" firstAttribute="leading" secondItem="jJE-we-paM" secondAttribute="trailing" constant="8" id="88G-wx-dEe"/>
+                        <constraint firstItem="LrA-jb-ryz" firstAttribute="top" secondItem="s4X-tL-Ieh" secondAttribute="topMargin" id="9YC-Hm-yfW"/>
+                        <constraint firstItem="vhz-fg-lvn" firstAttribute="top" secondItem="2id-O1-hrz" secondAttribute="bottom" constant="8" id="Bez-O2-MGQ"/>
+                        <constraint firstItem="vhz-fg-lvn" firstAttribute="leading" secondItem="s4X-tL-Ieh" secondAttribute="leading" constant="8" id="CUh-zk-UcG"/>
+                        <constraint firstItem="2id-O1-hrz" firstAttribute="trailing" secondItem="s4X-tL-Ieh" secondAttribute="trailingMargin" id="Cy5-BJ-ftb"/>
+                        <constraint firstItem="hTH-6f-eSF" firstAttribute="leading" secondItem="LrA-jb-ryz" secondAttribute="trailing" constant="8" id="JA6-rh-gzP"/>
+                        <constraint firstItem="jJE-we-paM" firstAttribute="leading" secondItem="s4X-tL-Ieh" secondAttribute="leadingMargin" id="L53-V5-ZCm"/>
+                        <constraint firstItem="2id-O1-hrz" firstAttribute="leading" secondItem="jJE-we-paM" secondAttribute="trailing" constant="8" id="Lny-6e-3at"/>
+                        <constraint firstAttribute="trailing" secondItem="vhz-fg-lvn" secondAttribute="trailing" constant="8" id="RGD-y4-hKs"/>
+                        <constraint firstItem="2id-O1-hrz" firstAttribute="top" secondItem="hTH-6f-eSF" secondAttribute="bottom" constant="8" id="Vx5-bp-n5g"/>
+                        <constraint firstItem="XxH-X7-WE5" firstAttribute="top" secondItem="vhz-fg-lvn" secondAttribute="bottom" constant="8" id="Wkb-tn-2al"/>
+                        <constraint firstItem="XxH-X7-WE5" firstAttribute="leading" secondItem="s4X-tL-Ieh" secondAttribute="leading" id="foF-qc-c1I"/>
+                        <constraint firstAttribute="bottom" secondItem="XxH-X7-WE5" secondAttribute="bottom" constant="8" id="kMc-SQ-tSv"/>
+                        <constraint firstItem="jJE-we-paM" firstAttribute="top" secondItem="LrA-jb-ryz" secondAttribute="top" id="lG7-C8-f8r"/>
+                        <constraint firstItem="2id-O1-hrz" firstAttribute="trailing" secondItem="hTH-6f-eSF" secondAttribute="trailing" id="mry-kj-z1C"/>
+                        <constraint firstItem="2id-O1-hrz" firstAttribute="leading" secondItem="jJE-we-paM" secondAttribute="trailing" constant="8" id="oNr-Tf-KLE"/>
+                        <constraint firstItem="hTH-6f-eSF" firstAttribute="leading" secondItem="LrA-jb-ryz" secondAttribute="trailing" constant="8" id="tYN-1D-ePQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="s4X-tL-Ieh" secondAttribute="trailing" id="8Bm-4V-yUA"/>
+                <constraint firstItem="s4X-tL-Ieh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HK3-6y-KFc"/>
+                <constraint firstAttribute="bottom" secondItem="s4X-tL-Ieh" secondAttribute="bottom" id="LiX-Jt-O9P"/>
+                <constraint firstItem="s4X-tL-Ieh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pw2-GV-lYR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="417" y="232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="man3.jpg" width="450" height="450"/>
+    </resources>
+</document>

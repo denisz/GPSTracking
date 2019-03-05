@@ -1,0 +1,24 @@
+{
+  "name": "service-logic",
+  "version": "0.0.1",
+  "description": "Logic app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "denis",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.1.3",
+    "express": "^4.12.3",
+    "gt-broker": "~0.0.2",
+    "gt-error": "~0.0.3",
+    "gt-error-handling": "~0.0.1",
+    "gt-errors": "~0.0.3",
+    "gt-list": "~0.0.1",
+    "gt-serialize": "~0.0.1",
+    "mongoose": "^4.0.2",
+    "q": "^1.3.0",
+    "underscore": "^1.8.3"
+  }
+}

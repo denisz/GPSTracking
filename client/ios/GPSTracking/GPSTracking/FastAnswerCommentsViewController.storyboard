@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DDP-Vl-fcx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fast Answer Comments View Controller-->
+        <scene sceneID="K1x-1K-xC1">
+            <objects>
+                <viewController storyboardIdentifier="FastAnswerCommentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DDP-Vl-fcx" customClass="FastAnswerCommentsViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ieo-lh-etn"/>
+                        <viewControllerLayoutGuide type="bottom" id="FTB-nZ-OAE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xwA-AZ-KDf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X3R-MF-PTq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DDP-Vl-fcx" id="TqJ-Zj-TXZ"/>
+                                    <outlet property="delegate" destination="DDP-Vl-fcx" id="v0h-dS-6fB"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptq-UB-bpk" customClass="PassThroughView" customModule="It_will_help" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="539" width="320" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="MtM-qe-xN3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X3R-MF-PTq" firstAttribute="top" secondItem="xwA-AZ-KDf" secondAttribute="top" id="1pO-ha-vkz"/>
+                            <constraint firstAttribute="trailing" secondItem="X3R-MF-PTq" secondAttribute="trailing" id="8NN-nM-GBj"/>
+                            <constraint firstItem="ptq-UB-bpk" firstAttribute="leading" secondItem="xwA-AZ-KDf" secondAttribute="leading" id="JEB-b4-IiP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ptq-UB-bpk" secondAttribute="bottom" id="g0f-P3-qI0"/>
+                            <constraint firstAttribute="trailing" secondItem="ptq-UB-bpk" secondAttribute="trailing" id="mRW-9k-jVZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="X3R-MF-PTq" secondAttribute="bottom" constant="60" id="opz-oc-ZZU"/>
+                            <constraint firstItem="X3R-MF-PTq" firstAttribute="leading" secondItem="xwA-AZ-KDf" secondAttribute="leading" id="uod-bT-2YW"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="600"/>
+                    <connections>
+                        <outlet property="bottom2LayoutConstraint" destination="opz-oc-ZZU" id="ZFa-zs-Nzj"/>
+                        <outlet property="bottomLayoutConstraint" destination="g0f-P3-qI0" id="JVn-q5-aiz"/>
+                        <outlet property="containerTextField" destination="ptq-UB-bpk" id="8Nn-4D-GwR"/>
+                        <outlet property="tableView" destination="X3R-MF-PTq" id="ZZ6-At-FYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avh-qX-gNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="175"/>
+        </scene>
+    </scenes>
+</document>

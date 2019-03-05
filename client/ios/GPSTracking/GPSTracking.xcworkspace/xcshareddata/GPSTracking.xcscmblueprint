@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CA52ED6B048BD302B7A5793AA3290C0E7F175306",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CA52ED6B048BD302B7A5793AA3290C0E7F175306" : 0,
+    "9B743EAFE885833D5C3FB79C6F033B93695A0689" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A419F53C-6D9B-4202-AEE8-3E1EA2E6F9D9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CA52ED6B048BD302B7A5793AA3290C0E7F175306" : "GPSTracking",
+    "9B743EAFE885833D5C3FB79C6F033B93695A0689" : "GPSTrackingclient\/ios\/GPSTracking\/GPSTracking\/NSDate-TimeAgo"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GPSTracking",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "client\/ios\/GPSTracking\/GPSTracking.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kevinlawler\/NSDate-TimeAgo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B743EAFE885833D5C3FB79C6F033B93695A0689"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/ZaycevDenis\/gpstracking.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CA52ED6B048BD302B7A5793AA3290C0E7F175306"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldView" customModule="It_will_help" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonAttach" destination="Ogu-YT-jT4" id="dJV-eR-MDe"/>
+                <outlet property="buttonSend" destination="cSV-31-XZr" id="7EO-2K-ixP"/>
+                <outlet property="textField" destination="KWo-v2-zys" id="uYo-Tn-p83"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="w52-Av-1DA">
+            <rect key="frame" x="0.0" y="5" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEO-wn-B0Z">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите сообщение" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KWo-v2-zys">
+                            <rect key="frame" x="58" y="0.0" width="486" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="ihS-Ef-55e"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="z7K-MF-XYU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="send"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="YTL-sq-aef"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogu-YT-jT4" customClass="MyCircleButtonView" customModule="It_will_help" customModuleProvider="target">
+                            <rect key="frame" x="10" y="10" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.42352941179999998" green="0.47450980390000003" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="DOm-2M-aew"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Mfz-el-opv"/>
+                                <constraint firstAttribute="height" constant="40" id="i81-bi-yYR"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="uZE-So-N8u"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" title="Button" image="attach">
+                                <color key="titleColor" red="0.98823529409999999" green="0.058823529409999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.15686274510000001" green="0.21960784310000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="handlerButtonAttach" destination="-1" eventType="touchUpInside" id="Vdm-Fx-OgP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-31-XZr" customClass="MyCircleButtonView" customModule="It_will_help" customModuleProvider="target">
+                            <rect key="frame" x="552" y="10" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.42352941179999998" green="0.47450980390000003" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="2Md-c6-XCA"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="MZZ-g6-kXL"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="mWn-db-ugj"/>
+                                <constraint firstAttribute="height" constant="40" id="ohr-is-K9m"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="8" minY="10" maxX="6" maxY="10"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="Button" image="send">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="handlerButtonSend" destination="-1" eventType="touchUpInside" id="pKI-W4-QYR"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNx-Qz-qIE" customClass="SeperatorView" customModule="It_will_help" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.68627450980000004" green="0.71372549019999998" blue="0.73333333329999995" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.42352941179999998" green="0.47450980390000003" blue="0.47843137250000001" alpha="0.53000000000000003" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="HOt-fb-2qp"/>
+                                <constraint firstAttribute="height" constant="1" id="SWk-Nn-MQT"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.93333333330000001" green="0.2274509804" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="wNx-Qz-qIE" firstAttribute="top" secondItem="XEO-wn-B0Z" secondAttribute="top" id="I5P-Zd-DjM"/>
+                        <constraint firstAttribute="trailing" secondItem="wNx-Qz-qIE" secondAttribute="trailing" id="K7F-HC-CNJ"/>
+                        <constraint firstAttribute="trailing" secondItem="cSV-31-XZr" secondAttribute="trailing" constant="8" id="KGo-Tl-DOd"/>
+                        <constraint firstItem="Ogu-YT-jT4" firstAttribute="leading" secondItem="XEO-wn-B0Z" secondAttribute="leading" constant="10" id="LjF-NM-Cb2"/>
+                        <constraint firstItem="KWo-v2-zys" firstAttribute="top" secondItem="XEO-wn-B0Z" secondAttribute="top" id="TgP-cV-Wcy"/>
+                        <constraint firstItem="wNx-Qz-qIE" firstAttribute="leading" secondItem="XEO-wn-B0Z" secondAttribute="leading" id="beu-Yz-j8k"/>
+                        <constraint firstAttribute="bottom" secondItem="Ogu-YT-jT4" secondAttribute="bottom" constant="10" id="bpQ-4R-0gW"/>
+                        <constraint firstItem="cSV-31-XZr" firstAttribute="leading" secondItem="KWo-v2-zys" secondAttribute="trailing" constant="8" id="jcW-wC-SZ7"/>
+                        <constraint firstAttribute="height" constant="60" id="tcU-hZ-NVl"/>
+                        <constraint firstItem="KWo-v2-zys" firstAttribute="leading" secondItem="Ogu-YT-jT4" secondAttribute="trailing" constant="8" id="yHf-lp-L3h"/>
+                        <constraint firstAttribute="bottom" secondItem="cSV-31-XZr" secondAttribute="bottom" constant="10" id="ybT-WO-4Ej"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XEO-wn-B0Z" secondAttribute="trailing" id="CL9-lG-kti"/>
+                <constraint firstAttribute="bottom" secondItem="XEO-wn-B0Z" secondAttribute="bottom" id="Dl1-ZZ-pjg"/>
+                <constraint firstItem="XEO-wn-B0Z" firstAttribute="leading" secondItem="w52-Av-1DA" secondAttribute="leading" id="LSY-iH-Tba"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="478" y="-389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="attach" width="120" height="120"/>
+        <image name="send" width="120" height="120"/>
+    </resources>
+</document>

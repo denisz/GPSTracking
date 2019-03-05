@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Лента-->
+        <scene sceneID="mV2-ML-0Uc">
+            <objects>
+                <viewController id="x1e-vB-wAi" customClass="MyPerformRequestsViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QbK-1o-UvN"/>
+                        <viewControllerLayoutGuide type="bottom" id="eaT-3I-x47"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="atZ-71-jUq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zNw-H7-b0A">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x1e-vB-wAi" id="xGg-Fn-Shc"/>
+                                    <outlet property="delegate" destination="x1e-vB-wAi" id="SMw-BX-I1f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eaT-3I-x47" firstAttribute="top" secondItem="zNw-H7-b0A" secondAttribute="bottom" id="2ZL-FW-8f4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zNw-H7-b0A" secondAttribute="trailing" constant="-16" id="D5T-P2-AiY"/>
+                            <constraint firstItem="zNw-H7-b0A" firstAttribute="leading" secondItem="atZ-71-jUq" secondAttribute="leadingMargin" constant="-16" id="p9p-Lg-wzZ"/>
+                            <constraint firstItem="zNw-H7-b0A" firstAttribute="top" secondItem="atZ-71-jUq" secondAttribute="topMargin" id="xOE-gM-Krq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Лента" id="oa7-IP-6rc">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="Nuh-tC-U0z">
+                            <color key="tintColor" red="0.27843001480000001" green="0.31373000140000001" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="zNw-H7-b0A" id="qeY-Ig-12J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E28-tf-iDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="186"/>
+        </scene>
+        <!--My Navigation Controller-->
+        <scene sceneID="xV7-a6-urS">
+            <objects>
+                <navigationController storyboardIdentifier="myPerformRequests" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xpP-38-B19" customClass="MyNavigationController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="sE3-Ov-32H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.29019999499999999" green="0.30979999899999999" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x1e-vB-wAi" kind="relationship" relationship="rootViewController" id="hHa-r1-irj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgP-uc-2NW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-540" y="192"/>
+        </scene>
+    </scenes>
+</document>

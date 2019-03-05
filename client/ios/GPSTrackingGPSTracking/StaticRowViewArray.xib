@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaticRowViewArray" rowHeight="39" id="mq5-LG-leo" customClass="StaticRowViewArray" customModule="It_will_help" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="39"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mq5-LG-leo" id="PWc-Ob-Shw">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TV7-t6-Sk9">
+                        <rect key="frame" x="13" y="8" width="339" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.15686274510000001" green="0.21960784310000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="344" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="FgW-1V-LJr">
+                        <rect key="frame" x="8" y="29.5" width="344" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="tum-OX-O6n"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TV7-t6-Sk9" firstAttribute="top" secondItem="PWc-Ob-Shw" secondAttribute="topMargin" id="JGI-1k-zy4"/>
+                    <constraint firstItem="FgW-1V-LJr" firstAttribute="leading" secondItem="PWc-Ob-Shw" secondAttribute="leadingMargin" id="NSg-NS-KnB"/>
+                    <constraint firstItem="TV7-t6-Sk9" firstAttribute="leading" secondItem="PWc-Ob-Shw" secondAttribute="leadingMargin" constant="5" id="TJn-dt-Y4u"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FgW-1V-LJr" secondAttribute="bottom" id="YCv-Ai-qPa"/>
+                    <constraint firstItem="FgW-1V-LJr" firstAttribute="top" secondItem="TV7-t6-Sk9" secondAttribute="bottom" constant="2" id="bkW-1H-MbW"/>
+                    <constraint firstItem="TV7-t6-Sk9" firstAttribute="trailing" secondItem="PWc-Ob-Shw" secondAttribute="trailingMargin" id="cCi-BF-lxm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FgW-1V-LJr" secondAttribute="trailing" id="vrW-iT-XxS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelView" destination="TV7-t6-Sk9" id="tNz-aZ-b2K"/>
+                <outlet property="subview" destination="FgW-1V-LJr" id="wut-kX-tKv"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="144.5"/>
+        </tableViewCell>
+    </objects>
+</document>

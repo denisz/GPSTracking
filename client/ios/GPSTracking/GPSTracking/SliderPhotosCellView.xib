@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" contentMode="center" reuseIdentifier="SliderPhotoReusableCell" id="c3j-vR-iiG" customClass="SliderPhotoCollectionViewCell" customModule="It_will_help" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lQr-uM-BR7">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="ggx-75-JpF"/>
+                            <constraint firstAttribute="width" constant="145" id="gvY-Jt-uTT"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggJ-aJ-Z05" customClass="MyCircleButtonView" customModule="It_will_help" customModuleProvider="target">
+                        <rect key="frame" x="-5" y="-16" width="32" height="32"/>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.47450980390000003" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="0Wb-7z-lZZ"/>
+                            <constraint firstAttribute="width" constant="32" id="xJm-IX-jFJ"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                        <state key="normal" image="remove">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="didTapRemove" destination="c3j-vR-iiG" eventType="touchUpInside" id="V1q-jj-oOV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="ggJ-aJ-Z05" firstAttribute="top" secondItem="c3j-vR-iiG" secondAttribute="top" constant="-16" id="D3e-HQ-r4s"/>
+                <constraint firstAttribute="centerX" secondItem="lQr-uM-BR7" secondAttribute="centerX" id="XZS-Ih-XsH"/>
+                <constraint firstAttribute="centerY" secondItem="lQr-uM-BR7" secondAttribute="centerY" id="Y2L-6n-FQj"/>
+                <constraint firstItem="ggJ-aJ-Z05" firstAttribute="leading" secondItem="c3j-vR-iiG" secondAttribute="leading" constant="-5" id="v7h-Xj-hTO"/>
+            </constraints>
+            <size key="customSize" width="156" height="109"/>
+            <connections>
+                <outlet property="backgroundView" destination="lQr-uM-BR7" id="SZQ-gP-o3h"/>
+                <outlet property="removeButton" destination="ggJ-aJ-Z05" id="MkF-Og-NPL"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="-69"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="man3.jpg" width="450" height="450"/>
+        <image name="remove" width="90" height="90"/>
+    </resources>
+</document>

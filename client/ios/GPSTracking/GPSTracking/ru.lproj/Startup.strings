@@ -1,0 +1,69 @@
+
+/* Class = "UITextField"; placeholder = "Номер телефона"; ObjectID = "1EW-Qr-Rgr"; */
+"1EW-Qr-Rgr.placeholder" = "Номер телефона";
+
+/* Class = "UIBarButtonItem"; title = "Назад"; ObjectID = "4eq-jP-kaE"; */
+"4eq-jP-kaE.title" = "Назад";
+
+/* Class = "UITextField"; placeholder = "Код"; ObjectID = "Akh-8I-PGt"; */
+"Akh-8I-PGt.placeholder" = "Код";
+
+/* Class = "UILabel"; text = "Регистрация"; ObjectID = "CII-je-shE"; */
+"CII-je-shE.text" = "Регистрация";
+
+/* Class = "UILabel"; text = "Вход"; ObjectID = "CVJ-uB-at0"; */
+"CVJ-uB-at0.text" = "Вход";
+
+/* Class = "UILabel"; text = " Введите номер телефона"; ObjectID = "DJs-J1-cVb"; */
+"DJs-J1-cVb.text" = " Введите номер телефона";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "EhR-BF-PjX"; */
+"EhR-BF-PjX.placeholder" = "E-mail";
+
+/* Class = "UINavigationItem"; title = "Правила сервиса"; ObjectID = "FDC-ox-BDE"; */
+"FDC-ox-BDE.title" = "Правила сервиса";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "Hbj-et-7lZ"; */
+"Hbj-et-7lZ.placeholder" = "Пароль";
+
+/* Class = "UIButton"; normalTitle = "Продолжить"; ObjectID = "ICV-iw-OCQ"; */
+"ICV-iw-OCQ.normalTitle" = "Продолжить";
+
+/* Class = "UILabel"; text = "asdsd"; ObjectID = "LAT-A9-Ne2"; */
+"LAT-A9-Ne2.text" = "asdsd";
+
+/* Class = "UITextField"; placeholder = "Полной имя"; ObjectID = "MNY-5l-oLh"; */
+"MNY-5l-oLh.placeholder" = "Полной имя";
+
+/* Class = "UILabel"; text = " Введите код"; ObjectID = "OZE-vu-Epp"; */
+"OZE-vu-Epp.text" = " Введите код";
+
+/* Class = "UIBarButtonItem"; title = "Назад"; ObjectID = "P9T-Ml-u8z"; */
+"P9T-Ml-u8z.title" = "Назад";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "PJk-I8-UwO"; */
+"PJk-I8-UwO.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "E-mail"; ObjectID = "VgN-d4-GsG"; */
+"VgN-d4-GsG.placeholder" = "E-mail";
+
+/* Class = "UIButton"; normalTitle = "Продолжить"; ObjectID = "aWd-up-1LE"; */
+"aWd-up-1LE.normalTitle" = "Продолжить";
+
+/* Class = "UIButton"; normalTitle = "Войти"; ObjectID = "adP-7I-l4g"; */
+"adP-7I-l4g.normalTitle" = "Войти";
+
+/* Class = "UIButton"; normalTitle = "Продолжить"; ObjectID = "bWp-uS-ezg"; */
+"bWp-uS-ezg.normalTitle" = "Продолжить";
+
+/* Class = "UIButton"; normalTitle = "Создать аккаунт"; ObjectID = "gzV-TC-d4Q"; */
+"gzV-TC-d4Q.normalTitle" = "Создать аккаунт";
+
+/* Class = "UITextView"; text = "Продолжая, вы принимаете наши Условия обслуживания."; ObjectID = "nxK-8o-NCF"; */
+"nxK-8o-NCF.text" = "Продолжая, вы принимаете наши Условия обслуживания.";
+
+/* Class = "UIBarButtonItem"; title = "Назад"; ObjectID = "sKQ-p6-dvM"; */
+"sKQ-p6-dvM.title" = "Назад";
+
+/* Class = "UIBarButtonItem"; title = "Назад"; ObjectID = "tNd-De-hn0"; */
+"tNd-De-hn0.title" = "Назад";

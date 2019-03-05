@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A419F53C-6D9B-4202-AEE8-3E1EA2E6F9D9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GPSTracking</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9B743EAFE885833D5C3FB79C6F033B93695A0689</key>
+		<string>https://github.com/kevinlawler/NSDate-TimeAgo.git</string>
+		<key>CA52ED6B048BD302B7A5793AA3290C0E7F175306</key>
+		<string>https://bitbucket.org/ZaycevDenis/gpstracking.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>client/ios/GPSTracking/GPSTracking.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9B743EAFE885833D5C3FB79C6F033B93695A0689</key>
+		<string>../../../..client/ios/GPSTracking/GPSTracking/NSDate-TimeAgo</string>
+		<key>CA52ED6B048BD302B7A5793AA3290C0E7F175306</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/ZaycevDenis/gpstracking.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA52ED6B048BD302B7A5793AA3290C0E7F175306</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA52ED6B048BD302B7A5793AA3290C0E7F175306</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GPSTracking</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9B743EAFE885833D5C3FB79C6F033B93695A0689</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NSDate-TimeAgo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

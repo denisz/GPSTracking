@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Navigation Controller-->
+        <scene sceneID="map-K5-udJ">
+            <objects>
+                <navigationController storyboardIdentifier="answerController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CSf-uh-fpC" customClass="MyNavigationController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H3u-dX-5Wp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6NL-1V-oeq" kind="relationship" relationship="rootViewController" id="0BE-yk-nqL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W55-fm-fE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5" y="-269"/>
+        </scene>
+        <!--Answer View Controller-->
+        <scene sceneID="k2f-Bg-eeV">
+            <objects>
+                <viewController storyboardIdentifier="answerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6NL-1V-oeq" customClass="AnswerViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JtT-m5-jIN"/>
+                        <viewControllerLayoutGuide type="bottom" id="BJ8-eQ-ltX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ox-dX-CBs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" canCancelContentTouches="NO" dataMode="prototypes" style="grouped" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="40" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="hMP-bh-dbM">
+                                <rect key="frame" x="0.0" y="-36" width="600" height="592"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="36" maxX="0.0" maxY="0.0"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" rowHeight="80" id="0gz-UV-XgI" customClass="CustomHeaderCell" customModule="It_will_help" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0gz-UV-XgI" id="Skh-ws-G86">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Комментарии:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCr-E9-94z">
+                                                    <rect key="frame" x="16" y="0.0" width="584" height="80"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.54901999239999999" green="0.59215998650000001" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KCr-E9-94z" firstAttribute="leading" secondItem="Skh-ws-G86" secondAttribute="leadingMargin" constant="8" id="0Df-H1-xe2"/>
+                                                <constraint firstItem="KCr-E9-94z" firstAttribute="top" secondItem="Skh-ws-G86" secondAttribute="topMargin" constant="-8" id="TMq-bh-cDd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="KCr-E9-94z" secondAttribute="bottom" constant="-8" id="j7y-MJ-YFz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KCr-E9-94z" secondAttribute="trailing" constant="-8" id="vGx-qd-A3M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="headerLabel" destination="KCr-E9-94z" id="I5T-tf-8v6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6NL-1V-oeq" id="b3f-Zl-XvZ"/>
+                                    <outlet property="delegate" destination="6NL-1V-oeq" id="9gU-k8-p1H"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w85-ft-XlK" customClass="PHFComposeBarView">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yxm-qq-LIp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="w85-ft-XlK" secondAttribute="trailing" constant="-16" id="3IZ-DM-ASY"/>
+                            <constraint firstItem="hMP-bh-dbM" firstAttribute="leading" secondItem="6ox-dX-CBs" secondAttribute="leadingMargin" constant="-16" id="6gP-hl-XWm"/>
+                            <constraint firstItem="hMP-bh-dbM" firstAttribute="top" secondItem="6ox-dX-CBs" secondAttribute="topMargin" constant="-36" id="B9f-zI-7IK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hMP-bh-dbM" secondAttribute="trailing" constant="-16" id="HKG-UO-a8O"/>
+                            <constraint firstItem="w85-ft-XlK" firstAttribute="top" secondItem="hMP-bh-dbM" secondAttribute="bottom" id="Q3L-ew-ggd"/>
+                            <constraint firstItem="BJ8-eQ-ltX" firstAttribute="top" secondItem="w85-ft-XlK" secondAttribute="bottom" id="QSv-ry-8FW"/>
+                            <constraint firstItem="w85-ft-XlK" firstAttribute="leading" secondItem="6ox-dX-CBs" secondAttribute="leadingMargin" constant="-16" id="kET-iF-Z7a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9yb-Ex-4Bi"/>
+                    <connections>
+                        <outlet property="bottomLayoutConstraint" destination="QSv-ry-8FW" id="K4X-Nf-Pge"/>
+                        <outlet property="composeBar" destination="w85-ft-XlK" id="ylF-Pl-22e"/>
+                        <outlet property="tableView" destination="hMP-bh-dbM" id="twM-Ou-BiC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ds8-U0-c7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="-269"/>
+        </scene>
+    </scenes>
+</document>

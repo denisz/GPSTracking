@@ -1,0 +1,13 @@
+/* 
+  ru.strings
+  GPSTracking
+
+  Created by denis zaytcev on 7/28/15.
+  Copyright (c) 2015 denis zaytcev. All rights reserved.
+*/
+"test"=  "тест";
+"Enable LocationInUse"  = "Enable Location";
+"Allow LocationInUse"   = "Allow Location";
+"Allow Notifications"   = "Allow Notifications";
+"Allowed Notifications" = "Allowed Notifications";
+"Allowed LocationInUse" = "Allowed Location";

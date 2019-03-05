@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="EventTableViewCell" rowHeight="100" id="8To-Mt-icU" customClass="EventTableViewCell" customModule="It_will_help" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8To-Mt-icU" id="wip-ty-KQ1">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20235A E Homestead Rd Саннивейл Соединённые Штаты Америки" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RaP-IL-OWk" userLabel="Location" customClass="LocationView" customModule="It_will_help" customModuleProvider="target">
+                        <rect key="frame" x="8" y="66" width="279" height="35.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.54118001459999998" green="0.56077998880000002" blue="0.57647001740000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Fzt-mM-SB6" userLabel="Avatar" customClass="MyCircleImageView" customModule="It_will_help" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="YQm-j4-W1P"/>
+                            <constraint firstAttribute="height" constant="50" id="k4q-Mf-Yu4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="221" placeholderIntrinsicHeight="30.5" text="Угроза физического воздействия со стороны" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhJ-Jf-5pi" userLabel="Context">
+                        <rect key="frame" x="66" y="30" width="221" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Y9I-S1-Ywp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.29019999499999999" green="0.30979999899999999" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="GOo-B3-WKE" userLabel="user name">
+                        <rect key="frame" x="66" y="8" width="97" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="SKY-hT-zdc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.28626999260000002" green="0.30588001009999999" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вчера" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6NV-7d-gj3" userLabel="Date">
+                        <rect key="frame" x="164" y="8" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="SeM-QC-hOu"/>
+                            <constraint firstAttribute="height" constant="21" id="Z7g-67-fVR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.54118001459999998" green="0.56077998880000002" blue="0.57647001740000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eqn-Zo-1M2" userLabel="Status" customClass="MyCircleView" customModule="It_will_help" customModuleProvider="target">
+                        <rect key="frame" x="42" y="8" width="16" height="16"/>
+                        <color key="backgroundColor" red="0.2235299945" green="0.79215997459999998" blue="0.45489999650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Kzc-EE-p0C"/>
+                            <constraint firstAttribute="width" constant="16" id="qht-ti-uIO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RaP-IL-OWk" firstAttribute="leading" secondItem="wip-ty-KQ1" secondAttribute="leading" constant="8" id="B9e-YS-neX"/>
+                    <constraint firstItem="GOo-B3-WKE" firstAttribute="top" secondItem="6NV-7d-gj3" secondAttribute="top" id="BU1-Rh-8c6"/>
+                    <constraint firstItem="Eqn-Zo-1M2" firstAttribute="top" secondItem="wip-ty-KQ1" secondAttribute="top" constant="8" id="FIh-n9-5L1"/>
+                    <constraint firstItem="Fzt-mM-SB6" firstAttribute="leading" secondItem="wip-ty-KQ1" secondAttribute="leading" constant="8" id="GN0-Up-SbW"/>
+                    <constraint firstItem="Fzt-mM-SB6" firstAttribute="top" secondItem="GOo-B3-WKE" secondAttribute="top" id="KCA-6B-je3"/>
+                    <constraint firstItem="GOo-B3-WKE" firstAttribute="leading" secondItem="Fzt-mM-SB6" secondAttribute="trailing" constant="8" id="KVm-82-aN0"/>
+                    <constraint firstItem="RaP-IL-OWk" firstAttribute="top" secondItem="fhJ-Jf-5pi" secondAttribute="bottom" constant="4" id="QGi-3T-x0b"/>
+                    <constraint firstItem="fhJ-Jf-5pi" firstAttribute="leading" secondItem="GOo-B3-WKE" secondAttribute="leading" id="Vsf-je-a2V"/>
+                    <constraint firstItem="6NV-7d-gj3" firstAttribute="leading" secondItem="GOo-B3-WKE" secondAttribute="trailing" constant="1" id="WqH-St-tac"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6NV-7d-gj3" secondAttribute="trailing" constant="-35" id="ZDY-2a-EQ8"/>
+                    <constraint firstItem="fhJ-Jf-5pi" firstAttribute="top" secondItem="GOo-B3-WKE" secondAttribute="bottom" constant="1" id="dLD-tg-jhZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RaP-IL-OWk" secondAttribute="bottom" id="fFc-bS-Q1n"/>
+                    <constraint firstItem="Fzt-mM-SB6" firstAttribute="top" secondItem="wip-ty-KQ1" secondAttribute="topMargin" id="gcX-a2-Yg4"/>
+                    <constraint firstAttribute="trailing" secondItem="RaP-IL-OWk" secondAttribute="trailing" id="tf3-1I-fLl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fhJ-Jf-5pi" secondAttribute="trailing" constant="-8" id="vVt-WJ-0aw"/>
+                    <constraint firstItem="Eqn-Zo-1M2" firstAttribute="leading" secondItem="wip-ty-KQ1" secondAttribute="leading" constant="42" id="yqt-vh-VZP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatar" destination="Fzt-mM-SB6" id="0Mc-Hf-FaW"/>
+                <outlet property="context" destination="fhJ-Jf-5pi" id="z9b-6i-Gq7"/>
+                <outlet property="dateView" destination="6NV-7d-gj3" id="iUS-RW-82S"/>
+                <outlet property="fullnameView" destination="GOo-B3-WKE" id="ogc-fj-YRM"/>
+                <outlet property="location" destination="RaP-IL-OWk" id="Odx-Tw-a12"/>
+                <outlet property="statusView" destination="Eqn-Zo-1M2" id="AAJ-G4-RF0"/>
+            </connections>
+            <point key="canvasLocation" x="208" y="152"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="man3.jpg" width="450" height="450"/>
+    </resources>
+</document>

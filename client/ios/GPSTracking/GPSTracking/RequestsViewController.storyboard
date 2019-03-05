@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AIx-EN-n3Z">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Requests View Controller-->
+        <scene sceneID="AWD-mZ-MnP">
+            <objects>
+                <viewController storyboardIdentifier="requestsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="290-uj-ybf" customClass="RequestsViewController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6aR-eu-ED8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rqa-vb-czW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zL0-7v-wuC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9UK-F2-Owr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="290-uj-ybf" id="c6j-pZ-JuS"/>
+                                    <outlet property="delegate" destination="290-uj-ybf" id="FSh-AR-5lV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rqa-vb-czW" firstAttribute="top" secondItem="9UK-F2-Owr" secondAttribute="bottom" id="28g-yX-5Ya"/>
+                            <constraint firstItem="9UK-F2-Owr" firstAttribute="leading" secondItem="zL0-7v-wuC" secondAttribute="leadingMargin" constant="-16" id="AlE-h0-r8x"/>
+                            <constraint firstItem="9UK-F2-Owr" firstAttribute="top" secondItem="zL0-7v-wuC" secondAttribute="topMargin" id="hiW-KN-lGj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9UK-F2-Owr" secondAttribute="trailing" constant="-16" id="wtp-oy-2Sj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QZH-jn-b8O"/>
+                    <connections>
+                        <outlet property="tableView" destination="9UK-F2-Owr" id="THZ-ms-899"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CO5-qC-ljf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="312"/>
+        </scene>
+        <!--My Navigation Controller-->
+        <scene sceneID="YXn-Kt-EVM">
+            <objects>
+                <navigationController storyboardIdentifier="requestsView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AIx-EN-n3Z" customClass="MyNavigationController" customModule="It_will_help" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="GsJ-e7-EyV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.28626999260000002" green="0.30588001009999999" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="290-uj-ybf" kind="relationship" relationship="rootViewController" id="hkR-P0-03x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oe4-rB-naE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106" y="329"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileInfoViewController" customModule="GPSTracking" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar" destination="tGw-YO-Rwo" id="XDA-wr-mRA"/>
+                <outlet property="buttonSettings" destination="vVP-pD-trF" id="MtC-4i-FBy"/>
+                <outlet property="buttonSpeech" destination="ljg-OS-nNG" id="rVi-5e-0qN"/>
+                <outlet property="fullname" destination="tl2-Df-luQ" id="V8r-4b-66w"/>
+                <outlet property="location" destination="tfm-Pg-Oqf" id="8EO-fs-LKB"/>
+                <outlet property="view" destination="XdO-Bh-Fcw" id="B2f-YR-xex"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XdO-Bh-Fcw">
+            <rect key="frame" x="0.0" y="1" width="600" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="35" width="600" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tGw-YO-Rwo" customClass="MyCircleImageView" customModule="GPSTracking" customModuleProvider="target">
+                            <rect key="frame" x="250" y="8" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="Bkz-Hu-2yv"/>
+                                <constraint firstAttribute="width" constant="100" id="NeK-M0-Iq5"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="eWN-GB-lsd"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="grZ-NE-XJY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="50"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иван Иванов" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl2-Df-luQ">
+                            <rect key="frame" x="0.0" y="112" width="600" height="23.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23.5" id="wcH-Bi-gfo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" red="0.28626999260000002" green="0.30588001009999999" blue="0.32157000899999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Саранск" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfm-Pg-Oqf">
+                            <rect key="frame" x="0.0" y="141" width="600" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ayJ-B7-eVY"/>
+                                <constraint firstAttribute="height" constant="21" id="yQp-gg-xfC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.54118001459999998" green="0.56077998880000002" blue="0.57647001740000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" alpha="0.69999999999999973" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVP-pD-trF" userLabel="Settings" customClass="MyCircleButtonView" customModule="GPSTracking" customModuleProvider="target">
+                            <rect key="frame" x="366" y="33" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HlT-XM-Rt7"/>
+                                <constraint firstAttribute="width" constant="50" id="Kmr-l9-7yG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <color key="tintColor" red="0.90196001530000003" green="0.30588001009999999" blue="0.18824000660000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="settings-50">
+                                <color key="titleColor" red="0.90196001530000003" green="0.30588001009999999" blue="0.18824000660000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.90196001530000003" green="0.30588001009999999" blue="0.18824000660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" alpha="0.69999999999999973" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljg-OS-nNG" userLabel="Speech">
+                            <rect key="frame" x="184" y="33" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="DEo-uG-K66"/>
+                                <constraint firstAttribute="height" constant="50" id="NRB-qB-4oc"/>
+                            </constraints>
+                            <color key="tintColor" red="0.90196001530000003" green="0.30588001009999999" blue="0.18824000660000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="speech_bubble-50">
+                                <color key="titleColor" red="0.90196001530000003" green="0.30588001009999999" blue="0.18824000660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tl2-Df-luQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1LR-i4-Kez"/>
+                        <constraint firstAttribute="height" constant="200" id="H1K-AE-lzY"/>
+                        <constraint firstItem="vVP-pD-trF" firstAttribute="leading" secondItem="tGw-YO-Rwo" secondAttribute="trailing" constant="16" id="HVo-Vq-IRc"/>
+                        <constraint firstItem="tGw-YO-Rwo" firstAttribute="leading" secondItem="ljg-OS-nNG" secondAttribute="trailing" constant="16" id="SZw-Wr-8tz"/>
+                        <constraint firstItem="vVP-pD-trF" firstAttribute="centerY" secondItem="tGw-YO-Rwo" secondAttribute="centerY" id="VPe-XY-cLX"/>
+                        <constraint firstItem="tGw-YO-Rwo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Vsx-6e-nA5"/>
+                        <constraint firstItem="tl2-Df-luQ" firstAttribute="top" secondItem="tGw-YO-Rwo" secondAttribute="bottom" constant="4" id="YC5-jj-9Iu"/>
+                        <constraint firstAttribute="trailing" secondItem="tfm-Pg-Oqf" secondAttribute="trailing" id="YG6-05-qRX"/>
+                        <constraint firstItem="tfm-Pg-Oqf" firstAttribute="top" secondItem="tl2-Df-luQ" secondAttribute="bottom" constant="5" id="fsn-8c-4V6"/>
+                        <constraint firstAttribute="centerX" secondItem="tGw-YO-Rwo" secondAttribute="centerX" id="l8N-3w-dIg"/>
+                        <constraint firstAttribute="trailing" secondItem="tl2-Df-luQ" secondAttribute="trailing" id="lQb-LU-aE6"/>
+                        <constraint firstItem="ljg-OS-nNG" firstAttribute="centerY" secondItem="tGw-YO-Rwo" secondAttribute="centerY" id="tpK-ar-iYm"/>
+                        <constraint firstItem="tfm-Pg-Oqf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uyK-qj-sCO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="CLA-0V-CmN"/>
+                <constraint firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YWH-Iq-xS1"/>
+                <constraint firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iRc-zw-x4f"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="XdO-Bh-Fcw" secondAttribute="leading" id="xBf-9r-VcS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="233" y="498"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="man3.jpg" width="450" height="450"/>
+        <image name="settings-50" width="50" height="50"/>
+        <image name="speech_bubble-50" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,39 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'GPSTracking' do
+    pod 'SwiftValidator',       :git => 'https://github.com/jpotts18/SwiftValidator.git', :commit => 'd801538'
+	pod 'Locksmith'
+    pod 'Alamofire', '~> 2.0'
+	pod 'FXBlurView', '~> 1.6.3'
+	pod 'LGActionSheet', '~> 1.0.0'
+	pod 'LGAlertView', '~> 1.0.0'
+	pod 'Kingfisher', '~> 1.4'
+	pod 'SZTextView'
+	pod 'TOCropViewController'	
+	pod 'LTMorphingLabel', '~> 0.0.7'
+	pod 'JGProgressHUD'
+	pod 'StatefulViewController', "~> 0.1"
+    pod 'HMSegmentedControl'
+	pod 'MXSegmentedPager'
+    pod 'Bolts'
+    pod 'Dollar'
+	pod 'IDMPhotoBrowser'
+	pod 'PHFComposeBarView', '~> 2.0.1'
+	pod 'RNLoadingButton', '~> 0.0.1'
+	pod 'SwiftyJSON'
+    pod 'PermissionScope', '~> 1.0'
+	pod 'XLForm', :git => 'https://github.com/xmartlabs/XLForm.git'
+#	pod 'Google-Maps-iOS-SDK'
+    pod 'GoogleMaps'
+end
+
+#:podspec => "https://raw.githubusercontent.com/Reflejo/GoogleMapsPodspec/master/Google-Maps-iOS-SDK.podspec.json"
+
+target 'GPSTrackingTests' do
+
+end
+

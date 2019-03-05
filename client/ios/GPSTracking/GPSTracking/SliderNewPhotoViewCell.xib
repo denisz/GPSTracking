@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderNewPhotoViewCell" customModule="It_will_help" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="c3W-yv-j8O" customClass="SliderNewPhotoViewCell" customModule="It_will_help" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoT-xO-AzG">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Keb-KO-uwi" customClass="MyCircleButtonView" customModule="It_will_help" customModuleProvider="target">
+                                <rect key="frame" x="30" y="30" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.47450980390000003" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="8GB-03-G5P"/>
+                                    <constraint firstAttribute="height" constant="80" id="XDc-M8-K9q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <state key="normal" image="attach">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Keb-KO-uwi" secondAttribute="centerY" id="6ML-7A-TQi"/>
+                            <constraint firstAttribute="centerX" secondItem="Keb-KO-uwi" secondAttribute="centerX" id="rzF-sa-087"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="UoT-xO-AzG" firstAttribute="top" secondItem="c3W-yv-j8O" secondAttribute="top" id="360-lm-XeP"/>
+                <constraint firstAttribute="bottom" secondItem="UoT-xO-AzG" secondAttribute="bottom" id="Xge-QL-d03"/>
+                <constraint firstAttribute="trailing" secondItem="UoT-xO-AzG" secondAttribute="trailing" id="ffT-xR-24v"/>
+                <constraint firstItem="UoT-xO-AzG" firstAttribute="leading" secondItem="c3W-yv-j8O" secondAttribute="leading" id="wjy-SZ-Chk"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="Keb-KO-uwi" id="wdN-aH-JXK"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="attach" width="120" height="120"/>
+    </resources>
+</document>
